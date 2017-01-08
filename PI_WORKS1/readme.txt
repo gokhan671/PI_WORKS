@@ -27,3 +27,5 @@ such as if clients donesn't have much more distinct songList.
 if there is small array items lenear search is well performed 
 if song list is goes huge items for each client 
 its also better to use HashList 
+
+I genered sample input text called "ýnput_text.rar"
