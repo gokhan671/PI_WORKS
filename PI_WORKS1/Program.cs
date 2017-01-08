@@ -161,7 +161,6 @@ namespace PI_WORKS
                     ClientID = int.Parse(ReadLineDelimiteValue[2]);
                     SongID = int.Parse(ReadLineDelimiteValue[1]);
 
-                    ReadDataList.TryGetValue(ClientID, out findListByClientID);
 
                     if (!ReadDataList.TryGetValue(ClientID, out findListByClientID))
                     {
@@ -229,7 +228,6 @@ namespace PI_WORKS
                     ClientID = int.Parse(ReadLineDelimiteValue[2]);
                     SongID = int.Parse(ReadLineDelimiteValue[1]);
 
-                    ReadDataList.TryGetValue(ClientID, out findListByClientID);
 
                     if (!ReadDataList.TryGetValue(ClientID, out findListByClientID))
                     {
@@ -298,7 +296,6 @@ namespace PI_WORKS
                     ClientID = int.Parse(ReadLineDelimiteValue[2]);
                     SongID = int.Parse(ReadLineDelimiteValue[1]);
 
-                    ReadDataList.TryGetValue(ClientID, out findListByClientID);
 
                     if (!ReadDataList.TryGetValue(ClientID, out findListByClientID))
                     {
