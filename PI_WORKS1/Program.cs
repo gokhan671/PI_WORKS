@@ -194,7 +194,7 @@ namespace PI_WORKS
             }
 
             /* **********EXPORT****** */
-            ExportResultSet(ResultSet, "ExecuteProcessHashList", false);
+            ExportResultSet( "ExecuteProcessHashList", false);
         }
 
         void ExecuteProcessHashList(DateTime FilterDate)
@@ -261,7 +261,7 @@ namespace PI_WORKS
             }
 
             /* **********EXPORT****** */
-            ExportResultSet(ResultSet, "ExecuteProcessHashList", true);
+            ExportResultSet( "ExecuteProcessHashList", true);
         }
 
         void ExecuteProcessHashListOptionalParm(DateTime? FilterDate = null)
@@ -329,7 +329,7 @@ namespace PI_WORKS
             }
 
             /* **********EXPORT****** */
-            ExportResultSet(ResultSet, "ExecuteProcessHashListOptionalParm", isDateFilterApplied);
+            ExportResultSet( "ExecuteProcessHashListOptionalParm", isDateFilterApplied);
         }
 
         void ExecuteProcessLinq()
@@ -460,7 +460,7 @@ namespace PI_WORKS
             }
 
             /* **********EXPORT****** */
-            ExportResultSet(ResultSet, "ExecuteProcessList");
+            ExportResultSet( "ExecuteProcessList");
 
         }
 
@@ -469,7 +469,7 @@ namespace PI_WORKS
         /// </summary>
         /// <param name="ResultSet"></param>
         /// <param name="MethodName"></param>
-        void ExportResultSet(Dictionary<int, int> ResultSet, string MethodName, bool IsDateFilterApplied = false)
+        void ExportResultSet(string MethodName, bool IsDateFilterApplied = false)
         {
             string ExportedFileName = string.Format("Output_Method_{0} {1}.txt", MethodName,
                IsDateFilterApplied ? "_DateFilter" : "");
